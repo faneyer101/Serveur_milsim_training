@@ -1,0 +1,1 @@
+[] execVM "core\vehicules\fn_emptyFuel.sqf";

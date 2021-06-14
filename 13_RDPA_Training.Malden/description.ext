@@ -1,0 +1,31 @@
+class CfgFunctions
+{
+	#include "functions.h"
+	#include "LT\cfgfunctions.hpp"		//transfert stuff
+};
+#include "LT\LTmenu.hpp"	//transfert stuff
+#include "config\cfgMaster.hpp"
+#include "scripts\ATM_airdrop\dialog.hpp"
+/*
+this addaction ["<t color='#0905FF'>Lancé la </t>fanfar sur <t color='#FF0000'>la marseillaise</t>", {[sirene_1, sirene_2, sirene_3, sirene_4, sirene_5, sirene_6] spawn RDPA_fnc_play_hymne_france}, [], 1.5, true, true, "", "true", 1, false, "", ""];
+this addaction ["<t color='#FF0000'>Lancé la </t>fanfar sur <t color='#FF0000'>l'hymne Canadienne</t>", {[sirene_1, sirene_2, sirene_3, sirene_4, sirene_5, sirene_6] spawn RDPA_fnc_play_hymne_canada}, [], 1.5, true, true, "", "true", 1, false, "", ""];
+this addaction ["<t color='#000000'>Lancé la <t color='#D4CE00'>fanfar sur <t color='#FF0000'>l'hymne belge</t>", {[sirene_1, sirene_2, sirene_3, sirene_4, sirene_5, sirene_6] spawn RDPA_fnc_play_hymne_belge}, [], 1.5, true, true, "", "true", 1, false, "", ""];
+*/
+class CfgSounds
+{
+   sounds[] = {};
+
+	class sirene {name=" ";sound[]={"sound\sirene.wav",5,0.5,250};titles[] = {};};
+	class hymnefranceinstru {name=" ";sound[]={"sound\hymne_france_instru.ogg",5,1,250};titles[] = {};};
+	class hymnecanada {name=" ";sound[]={"sound\hymne_canada.ogg",5,1,250};titles[] = {};};
+	class hymnebelge {name=" ";sound[]={"sound\hymne_belge.ogg",5,1,250};titles[] = {};};
+};
+
+class CfgMusic
+{
+	class hymnefrance
+	{
+			name = "hymne France";
+			sound[] = {"\sound\hymne_france_instru.ogg", db+5,0.5};
+	};
+};
